@@ -1,0 +1,12 @@
+{
+    "lastUpdated":"2024-11-28T03:54:36.463Z",
+    "papers":[
+        {
+            "id":"2404.13813",
+            "title":"From LLM to NMT: Advancing Low-Resource Machine Translation with Claude",
+            "authors":["Maxim Enis","Mark Hopkins"],
+            "abstract":"  We show that Claude 3 Opus, a large language model (LLM) released by\nAnthropic in March 2024, exhibits stronger machine translation competence than\nother LLMs. Though we find evidence of data contamination with Claude on\nFLORES-200, we curate new benchmarks that corroborate the effectiveness of\nClaude for low-resource machine translation into English. We find that Claude\nhas remarkable \\textit{resource efficiency} -- the degree to which the quality\nof the translation model depends on a language pair's resource level. Finally,\nwe show that advancements in LLM translation can be compressed into traditional\nneural machine translation (NMT) models. Using Claude to generate synthetic\ndata, we demonstrate that knowledge distillation advances the state-of-the-art\nin Yoruba-English translation, meeting or surpassing strong baselines like\nNLLB-54B and Google Translate.\n",
+            "citations":19
+        }
+    ]
+}

@@ -1,15 +1,18 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { articles } from '../data/articles';  // Import the articles data
+import { articles } from '../data/articles';
 
 const Writing = () => {
   const location = useLocation();
   const isWritingPage = location.pathname === '/writing';
-  const displayedArticles = isWritingPage ? articles : articles.slice(0, 2);
+  const sortedArticles = [...articles].sort((a, b) => 
+    new Date(b.date).getTime() - new Date(a.date).getTime()
+  );
+  const displayedArticles = isWritingPage ? sortedArticles : sortedArticles.slice(0, 2);
 
   return (
     <div className="page writing-page">
-      <h1>Writing</h1>
+      <h2>Writing</h2>
       <div className="articles-list">
         {displayedArticles.map((article) => (
           <Link 
@@ -18,14 +21,14 @@ const Writing = () => {
             className="article-preview"
             onClick={(e) => e.stopPropagation()}
           >
-            <h2>{article.title}</h2>
+            <h3>{article.title}</h3>
             <span className="article-date">
               {new Date(article.date).toLocaleDateString('en-US', { 
                 month: 'long',
                 year: 'numeric'
               })}
             </span>
-            <p>{article.excerpt || article.content.slice(0, 200)}...</p>
+            <p>{article.excerpt || "Click to read more..."}</p>
           </Link>
         ))}
       </div>

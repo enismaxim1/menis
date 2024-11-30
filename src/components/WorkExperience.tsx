@@ -5,7 +5,7 @@ import gustoLogo from '../assets/logos/gusto.jpeg';
 
 const WorkExperience = () => (
   <div className="page">
-    <h1>Work</h1>
+    <h2>Work</h2>
     <div className="work-experience">
       <a href="https://ramp.com" target="_blank" rel="noopener noreferrer" className="job-entry article-preview">
         <div className="job-logo-container">

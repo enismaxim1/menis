@@ -1,0 +1,33 @@
+
+We are in the middle of an AI revolution. GitHub Copilot has already [been measured to improve the productivity of software engineers by ~25%](https://readwise-assets.s3.amazonaws.com/media/wisereads/articles/the-effects-of-generative-ai-o/4945566.pdf), and tools like Cursor + Claude 3.5 Sonnet are likely doubling that impact. This progression sounds strikingly similar to predictions made years ago by rationalist communities like LessWrong. Technology, they argued, is recursively self-improving at an exponential rate. As technology becomes more advanced, so too does the rate of technological improvement. First, AI improves the efficiency of software engineers, which itself increases the rate of AI progress. Eventually, software engineering gets fully automated, and the AI reaches a point where it can directly, and quickly, improve upon itself. At this point, we reach ASI (artificial superintelligence) - all technical, logical, and agentic challenges will be solved. 
+
+Simple math suggests that if software engineers become 50% more productive, companies need half as many engineers to get the same work done. Therefore, it seems obvious that demand for software engineers will decrease. However, **this is empirically false.** Technological progress is bottlenecked by software, and increasing productivity of software engineers unlocks even more progress, thereby increasing demand for top talent. Software engineers in the U.S. are better compensated now than ever before. Ask any startup founder - there is unattainably high demand for cracked technical talent across the board.
+
+Many tech workers take comfort in the increasing demand, reasoning that the doomsday predictions of AI taking the jobs of software engineers must be wrong. But those who believe this are in for a surprise. OpenAI's o1 model has become much better at competition math than the vast majority of "cracked" talent in tech. If o1 can reach any semblance of generalization, it will rapidly surpass all but the top 1% (or 0.1%) of software engineers. AI has not been automating away demand for technical talent, and will not for many more years, but eventually, it will. As Hemingway once said, "Gradually, then suddenly."
+
+This raises a stark contradiction: **top technical ability is becoming more economically valuable today than ever before, but its value will soon be reduced to zero.** 
+
+So where does this leave us?
+
+### The Intelligence Explosion and Soft Skills
+
+
+The key lies in understanding the eventual outcomes of AGI. Two plausible scenarios emerge:
+
+1. **The unaligned superintelligence**: In this scenario, the super intelligence has full agency over mankind, and humans are at its mercy. Nothing that any human does has any value; the superintelligence has the capability to control everything. Everything of consequence is calculated by the AGI. The best we can do is hope that the superintelligence is benevolent.
+
+2. **The aligned superintelligence**: In the aligned outcome, human organizations, not AI, run the superintelligence at the top level. In this world, soft skills have intrinsic value, since the world leaders are still human and able to be influenced through human interaction. Further, though an AGI will kill the practical importance of an idea, many ideas will still be valued solely because they come from a human. As evidence, look no further than chess, Go, Scrabble, or any other game in which AI has surpassed humans. Minimally, I expect art and entertainment to fall under this category. 
+
+In the aligned scenario, "soft skills" become the currency of influence and relevance. And this is precisely where the tech world faces a reckoning.
+
+Software engineers are notoriously socially awkward. Many of them see product managers, designers, and salespeople as NPCs, dismissing their ideas whenever they don't have technical backing. Aside from the clear fallacy of overindexing on technical expertise, these engineers are in for a rude awakening. Those who fail to adapt will, for the first time, find themselves stuck in a life of mediocrity.
+
+### Preparing for the Future
+
+To maximize post-AGI leverage, we should focus on skills that hold intrinsic value in an aligned intelligence scenario: communication, charisma, and human-centered creativity. These are precisely the areas where many software engineers fall short. Though it may sound absurd to those in tech, these skillsets are critical for the success of any organization.
+
+- Communication is the fundamental unit of influence for anything done by a person. Even in a pre-AGI world, software engineers don't assign communication skills the importance that they deserve.
+- Art and entertainment will remain valued for their human origin. Much like communication, these are also both crucial skills in today's world.
+- Leadership and emotional intelligence will define success in a world where execution is no longer bottlenecked by technical ability.
+
+While software engineers code themselves into irrelevance, professionals in white-collar roles like management, sales, and creative industries cultivate the very skills that will matter most in tomorrow's future.

@@ -22,10 +22,10 @@ const saveCacheData = (data: typeof paperCache) => {
 const Research = () => {
   const [papers, setPapers] = useState<Paper[]>([]);
 
-  // Example arXiv ID
-  const arxivIds = ['2404.13813']; // Replace with your paper IDs
-
   useEffect(() => {
+    // Move arxivIds inside useEffect
+    const arxivIds = ['2404.13813']; // Replace with your paper IDs
+
     // Immediately show cached data
     const cachedData = getCachedData();
     if (cachedData.papers.length > 0) {
@@ -81,11 +81,11 @@ const Research = () => {
     };
 
     fetchPapers();
-  }, [arxivIds]);
+  }, []); // Empty dependency array since arxivIds is now inside
 
   return (
     <div className="page">
-      <h1>Research</h1>
+      <h2>Research</h2>
       
       <div className="papers">
         {papers.map((paper) => (

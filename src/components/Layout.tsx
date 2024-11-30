@@ -1,6 +1,5 @@
 import React from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
-import { FaTwitter, FaGithub, FaLinkedin } from 'react-icons/fa';
 import Home from './Home';
 import Writing from './Writing';
 import WorkExperience from './WorkExperience';

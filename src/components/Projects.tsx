@@ -4,7 +4,7 @@ import polyLogo from '../assets/logos/polytranslator.png';
 
 const Projects = () => (
   <div className="page">
-    <h1>Projects</h1>
+    <h2>Projects</h2>
     <div className="work-experience">
       <a href="https://coptictranslator.com" target="_blank" rel="noopener noreferrer" className="job-entry article-preview">
         <div className="job-logo-container">

@@ -1,7 +1,6 @@
 interface Article {
     id: number;
     title: string;
-    content: string;
     excerpt?: string;
     date: string;
     slug: string;
@@ -10,52 +9,36 @@ interface Article {
   export const articles: Article[] = [
     {
       id: 1,
-      title: "Understanding React Hooks",
-      excerpt: "React Hooks are a powerful feature introduced in React 16.8 that allow you to use state and other React features without writing a class component...",
-      content: `
-# Understanding React Hooks
-
-React Hooks are a powerful feature introduced in React 16.8 that allow you to use state and other React features without writing a class component.
-
-## Why Hooks?
-
-Hooks solve several problems:
-- Reusing stateful logic between components
-- Reducing complexity in components
-- Avoiding class confusion
-
-## Common Hooks
-
-### useState
-\`\`\`jsx
-const [state, setState] = useState(initialValue);
-\`\`\`
-
-### useEffect
-\`\`\`jsx
-useEffect(() => {
-  // Side effect code
-}, [dependencies]);
-\`\`\`
-
-A wise man once told me:
-> Those who can't, teach.
-      `,
-      date: "2024-04-20",
-      slug: "understanding-react-hooks"
+      title: "Why so bullish on AI agents?",
+      excerpt: "In NYC it feels like everybody is bullish on AI agents. Go to any AI event, tell any VC the codeword “AI agents”, and they will stare you with reverence...",
+      date: "2024-08-15",
+      slug: "why-bullish-agents"
     },
     {
       id: 2,
-      title: "Why is it so hard to build with AI?",
-      content: "People suck at building with AI",
-      date: "2024-03-20",
-      slug: "ai-is-overrated"
+      title: "Find Your People",
+      excerpt: "The greatest work in science, technology, literature, and art has come from communities of people. Historically, breakthrough innovations and artistic revolutions emerged not from isolated genius...",
+      date: "2024-08-14",
+      slug: "find-your-people"
     },
     {
       id: 3,
-      title: "What skills are valuable in a post-AGI world?",
-      content: "Assume that AI fully solves all technical problems. Employees at OpenAI, Anthropic, and the entirety of San Francisco think is going to be how our world looks in a matter of years. What skills will be valuable in this world?",
-      date: "2024-02-20",
+      title: "Software Engineers are Not Going to Make It",
+      date: "2024-11-28",
+      excerpt: "We are in the middle of an AI revolution. GitHub Copilot has already been measured to improve the productivity of software engineers by ~25%...",
       slug: "skills-in-post-agi-world"
-    },
+    }
   ];
+  
+  export async function getArticleContent(slug: string): Promise<string> {
+    try {
+        const response = await fetch(`/content/${slug}.txt`);
+        if (!response.ok) {
+            throw new Error('Article not found');
+        }
+        return await response.text();
+    } catch (error) {
+        console.error('Error loading article content:', error);
+        throw error;
+    }
+  }

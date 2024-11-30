@@ -366,10 +366,14 @@ p {
   font-size: 0.9rem;
   display: block;
   margin-bottom: 1rem;
+  font-style: italic;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1rem;
 }
 
 .article-content {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -412,6 +416,14 @@ p {
 .article-body ol {
   margin: 1rem 0;
   padding-left: 2rem;
+  list-style-position: outside;
+}
+
+.article-body li {
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 0.5rem;
+  padding-left: 0.5rem;
 }
 
 .article-body blockquote {
@@ -433,6 +445,8 @@ p {
   display: inline-flex;
   align-items: center;
   transition: color 0.2s;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
 }
 
 .article-footer a:hover {
@@ -542,4 +556,40 @@ p {
 
 .profile-container .social-links {
   margin-left: 0;
+}
+
+.article-body hr {
+  border: none;
+  border-top: 1px solid #eee;
+  padding-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+}
+
+h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1.25rem;
+  color: #2c3e50;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+h4 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  color: #2c3e50;
+}
+
+h5 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
 }

@@ -5,9 +5,13 @@ import { articles } from '../data/articles';
 const Writing = () => {
   const location = useLocation();
   const isWritingPage = location.pathname === '/writing';
-  const sortedArticles = [...articles].sort((a, b) => 
+  const idArticles = articles.map((article, index) => ({
+    ...article,
+    id: index + 1
+  }));
+  const sortedArticles = [...idArticles].sort((a, b) => 
     new Date(b.date).getTime() - new Date(a.date).getTime()
-  );
+  )
   const displayedArticles = isWritingPage ? sortedArticles : sortedArticles.slice(0, 2);
 
   return (

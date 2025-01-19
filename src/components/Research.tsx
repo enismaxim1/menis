@@ -8,6 +8,7 @@ interface Paper {
   authors: string[];
   abstract: string;
   citations?: number;
+  year: number;
 }
 
 const getCachedData = () => {
@@ -23,13 +24,15 @@ const Research = () => {
   const [papers, setPapers] = useState<Paper[]>([]);
 
   useEffect(() => {
-    // Move arxivIds inside useEffect
-    const arxivIds = ['2404.13813']; // Replace with your paper IDs
+    const arxivIds = ['2404.13813'];
 
     // Immediately show cached data
     const cachedData = getCachedData();
     if (cachedData.papers.length > 0) {
-      setPapers(cachedData.papers);
+      setPapers(cachedData.papers.map((paper: Paper) => ({
+        ...paper,
+        year: paper.year || 2024  // Set default year if not available in cache
+      })));
     }
 
     // Then fetch fresh data
@@ -55,6 +58,10 @@ const Research = () => {
             );
             const semanticScholarData = await semanticScholarResponse.json();
             
+            // Inside fetchPapers function, in the mapping of arxivIds
+            const publishedDate = xmlDoc.querySelector('published')?.textContent || '';
+            const year = new Date(publishedDate).getFullYear();
+            
             return {
               id,
               title,
@@ -63,6 +70,7 @@ const Research = () => {
               ),
               abstract: xmlDoc.querySelector('summary')?.textContent || '',
               citations: semanticScholarData.numCitedBy,
+              year,  // Add year to the returned object
             };
           })
         );
@@ -102,7 +110,7 @@ const Research = () => {
             <div className="job-content">
               <h3 className="paper-title">{paper.title}</h3>
               <div className="paper-meta">
-                by {paper.authors.join(', ')} · {new Date().getFullYear()} · 
+                by {paper.authors.join(', ')} · {paper.year} · 
                 {paper.citations !== undefined && (
                   <span className="citations">Cited by {paper.citations}</span>
                 )}

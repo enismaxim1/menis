@@ -23,6 +23,12 @@ interface Article {
       date: "2024-11-28",
       excerpt: "We are in the middle of an AI revolution. GitHub Copilot has already been measured to improve the productivity of software engineers by ~25%...",
       slug: "skills-in-post-agi-world"
+    },
+    {
+      title: "The Great Replacement",
+      date: "2024-12-20",
+      excerpt: "In the next year or two, the vast majority of workers in the tech industry will be replaced by AI. The process will be much slower and messier than many at Silicon Valley may expect, due to bottlenecks that have nothing to do with intelligence at all.",
+      slug: "the-great-replacement"
     }
   ];
   

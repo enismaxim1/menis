@@ -437,6 +437,7 @@ p {
   margin-top: 3rem;
   padding-top: 1rem;
   border-top: 1px solid #e0e0e0;
+  text-align: left;
 }
 
 .article-footer a {
@@ -447,6 +448,8 @@ p {
   transition: color 0.2s;
   margin-top: 0rem;
   margin-bottom: 0rem;
+  margin-left: 0;
+  padding-left: 0;
 }
 
 .article-footer a:hover {

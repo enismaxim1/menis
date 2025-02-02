@@ -28,7 +28,7 @@ interface Article {
       title: "The Last Automation",
       date: "2025-01-19",
       excerpt: "In the next year or two, the vast majority of workers in the tech industry will be replaced by AI. The process will be much slower and messier than many at Silicon Valley may expect, due to bottlenecks that have nothing to do with intelligence at all.",
-      slug: "the-great-replacement"
+      slug: "the-last-automation"
     }
   ];
   

@@ -14,7 +14,7 @@ const WorkExperience = () => (
         <div className="job-content">
           <div className="company-name">Ramp</div>
           <div className="role-info">
-            Software Engineer (Summer 2024 - Present)
+            Applied AI Engineer (Summer 2024 - Present)
           </div>
         </div>
       </a>

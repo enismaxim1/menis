@@ -28,7 +28,7 @@ const Home = () => (
         </div>
         <div className="profile-text">
           <div style={{ maxWidth: '75%' }}>
-            I am a recent graduate of Williams College interested in AI, engineering, startups, and philosophy. Currently working on AI at Ramp. Based in NYC. Contact me at {' '}
+            I am an engineer interested in AI, startups, and philosophy. Currently building AI coding agents at Ramp in NYC. Contact me at {' '}
             <a 
               className="email"
               onClick={(e) => {
@@ -43,7 +43,7 @@ const Home = () => (
                 <span key={i} style={{ display: 'inline-block' }}>{char}</span>
               ))}
             </a>
-            {' '}for any requests. 
+            {' '}for any requests, or book a call with me <a href="https://calendly.com/enismaxim1/30min" target="_blank" rel="noopener noreferrer">here</a>.
           </div>
         </div>
       </div>

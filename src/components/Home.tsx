@@ -43,7 +43,7 @@ const Home = () => (
                 <span key={i} style={{ display: 'inline-block' }}>{char}</span>
               ))}
             </a>
-            {' '}for any requests, or book a call with me <a href="https://calendly.com/enismaxim1/30min" target="_blank" rel="noopener noreferrer">here</a>.
+            {' '}for any requests.
           </div>
         </div>
       </div>

@@ -18,12 +18,12 @@ interface Article {
       date: "2024-08-14",
       slug: "find-your-people"
     },
-    {
-      title: "Software Engineers are Not Going to Make It",
-      date: "2024-11-28",
-      excerpt: "We are in the middle of an AI revolution. GitHub Copilot has already been measured to improve the productivity of software engineers by ~25%...",
-      slug: "skills-in-post-agi-world"
-    },
+    // {
+    //   title: "Software Engineers are Not Going to Make It",
+    //   date: "2024-11-28",
+    //   excerpt: "We are in the middle of an AI revolution. GitHub Copilot has already been measured to improve the productivity of software engineers by ~25%...",
+    //   slug: "skills-in-post-agi-world"
+    // },
     {
       title: "The Last Automation",
       date: "2025-01-19",

@@ -27,7 +27,7 @@ interface Article {
     {
       title: "The Last Automation",
       date: "2025-01-19",
-      excerpt: "In the next year or two, the vast majority of workers in the tech industry will be replaced by AI. The process will be much slower and messier than many at Silicon Valley may expect, due to bottlenecks that have nothing to do with intelligence at all.",
+      excerpt: "During the Industrial Revolution, we didn't replace horse-drawn carriages by building robot horses - we built cars. Similarly, the strengths of humans and AI are distinct. And when the big labs build AGI, this will still be true. So why are we still trying to build AI that directly substitutes human engineers?",
       slug: "the-last-automation"
     }
   ];

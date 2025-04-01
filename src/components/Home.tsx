@@ -28,7 +28,7 @@ const Home = () => (
         </div>
         <div className="profile-text">
           <div style={{ maxWidth: '75%' }}>
-            I am an engineer interested in AI, startups, and philosophy. Currently building AI coding agents at Ramp in NYC. Contact me at {' '}
+            I am an engineer interested in AI, technology, and philosophy. Currently exploring the future of engineering at Ramp in NYC. Contact me at {' '}
             <a 
               className="email"
               onClick={(e) => {
